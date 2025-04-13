@@ -65,7 +65,7 @@ config.parse_defaults()
 base.check_build_version(base_dir)
 
 # update
-if ("1" == config.option("update")):
+if ("1" == config.option("update") and False):
   repositories = base.get_repositories()
   base.update_repositories(repositories)
 
@@ -83,7 +83,7 @@ if ("1" == base.get_env("OO_ONLY_BUILD_JS")):
 
 # core 3rdParty
 make_common.make()
-
+exit(0)
 # build updmodule for desktop (only for windows version)
 if config.check_option("module", "desktop"):
   config.extend_option("qmake_addon", "URL_WEBAPPS_HELP=https://download.onlyoffice.com/install/desktop/editors/help/v" + base.get_env('PRODUCT_VERSION') + "/apps")
