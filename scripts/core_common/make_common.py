@@ -41,7 +41,6 @@ def make():
   icu.make()
   openssl.make()
   v8.make()
-  exit(0)
   html2.make()
   hunspell.make(False)
   harfbuzz.make()
