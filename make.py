@@ -83,7 +83,7 @@ if ("1" == base.get_env("OO_ONLY_BUILD_JS")):
 
 # core 3rdParty
 make_common.make()
-exit(0)
+
 # build updmodule for desktop (only for windows version)
 if config.check_option("module", "desktop"):
   config.extend_option("qmake_addon", "URL_WEBAPPS_HELP=https://download.onlyoffice.com/install/desktop/editors/help/v" + base.get_env('PRODUCT_VERSION') + "/apps")
@@ -95,7 +95,7 @@ if config.check_option("module", "desktop"):
 
 # build
 build_sln.make()
-
+exit(0)
 # js
 build_js.make()
 
