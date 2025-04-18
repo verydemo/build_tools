@@ -82,7 +82,7 @@ if ("1" == base.get_env("OO_ONLY_BUILD_JS")):
 #base.check_tools()
 
 # core 3rdParty
-make_common.make()
+# make_common.make()
 
 # build updmodule for desktop (only for windows version)
 if config.check_option("module", "desktop"):
