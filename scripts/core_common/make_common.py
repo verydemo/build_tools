@@ -47,8 +47,8 @@ def make():
   hunspell.make(False)
   harfbuzz.make()
   glew.make()
-  hyphen.make()
-  googletest.make()
+  #hyphen.make()
+  #googletest.make()
 
   if config.check_option("build-libvlc", "1"):
     libvlc.make()
