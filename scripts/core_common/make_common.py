@@ -36,12 +36,11 @@ def make():
       if base.is_dir(toolchain):
         check_android_ndk_macos_arm(toolchain + "/prebuilt")
 
-  v8.make()
   boost.make()
   cef.make()
   icu.make()
   openssl.make()
-  #v8.make()
+  v8.make()
   html2.make()
   hunspell.make(False)
   harfbuzz.make()
